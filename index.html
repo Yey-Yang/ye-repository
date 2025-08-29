@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="lo">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ແນະນຳຕົນເອງ | Personal Intro</title>
+    <meta name="description"
+        content="Portfolio & personal intro website in Lao. Smooth animations, dark mode, and project cards." />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="#home" class="brand"><span class="logo" aria-hidden="true"></span> <span id="siteName">YE YANG</span></a>
+            <ul>
+                <!-- <li><a href="#projects">ຜົນງານ</a></li> -->
+                <li><a href="#about">ກ່ຽວກັບຂ້ອຍ</a></li>
+                <li><a href="#contact">ຕິດຕໍ່</a></li>
+            </ul>
+            <div class="actions">
+                <button id="themeBtn" class="btn" aria-label="Toggle theme">🌙</button>
+                <button id="menuBtn" class="btn menu-toggle" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+        <div class="container">
+            <div id="mobileMenu" class="mobile-menu">
+                <!-- <a href="#projects">ຜົນງານ</a> -->
+                <a href="#about">ກ່ຽວກັບຂ້ອຍ</a>
+                <a href="#contact">ຕິດຕໍ່</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero container">
+        <div class="glow" aria-hidden="true"></div>
+        <div class="hero-card reveal">
+            <div>
+                <span class="tag"><span class="dot"></span> ສະບາຍດີ 👋</span>
+                <h1>ຂ້ອຍຊື່ <span style="white-space:nowrap; font-weight:800;" id="heroName">YE YANG</span></h1>
+                <p class="lead">ນີ້ແມ່ນເວັບໄຊແນະນຳຕົນເອງຂອງຂ້ອຍ — ຮຽກຮູ້ກ່ຽວກັບການຮຽນ, ຄວາມສົນໃຈ.</p>
+                <p>ຂ້ອຍຮຽນຢູ່ ສາຂາຄອມພິວເຕິ/ຄະນະວິທະຍາສາດທຳມະຊາດ(ພາກປົກກະຕິ) ແລະ ສາຂາພາສາອັງກິດສື່ສານທົ່ວໄປ/lao-top college(ພາກຄ່ຳ) ຂ້ອຍມີຄວາມສົນໃຈຢາກເປັນນັກພັດທະນາໂປຼແກຣມ ແລະ ເວັບໄຊ໌, ຂ້ອຍມີຄວາມມັກຮັກໃນດ້ານການຮັກສາສຸຂະພາບ</p>
+                <div class="roles">ຂ້ອຍແມ່ນ <b id="typing" class="typing"></b></div>
+                <div class="cta">
+                    <!-- <a class="btn primary" href="#projects">ເບິ່ງຜົນງານ</a> -->
+                    <a class="btn" href="#contact">ຕິດຕໍ່ຂ້ອຍ</a>
+                </div>
+            </div>
+            <div class="hero-figure">
+                <div class="pfp" id="pfp" role="img" aria-label="Profile placeholder">
+                    <div class="right">
+                        <div class="image-box">
+                            <img src="yey-profile.jpeg" alt="My Photo" class="profile-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PROJECTS -->
+    <!-- <section id="projects">
+        <div class="container">
+            <h2 class="section-title">ຜົນງານໂດດເດ່ນ</h2>
+            <p class="section-sub">ບາງສ່ວນຂອງ Project ແລະ ການຝຶກປະສົບການທີ່ນ່າສົນໃຈ.</p>
+            <div class="grid" id="projectsGrid"> -->
+                <!-- Project cards inserted here or edit statically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container about">
+            <div class="panel reveal">
+                <h2 class="section-title">ກ່ຽວກັບຂ້ອຍ</h2>
+                <p>ຂ້ອຍເປັນຄົນຮັກການຮຽນຮູ້ ແລະຊອກຫາສິ່ງໃໝ່ໆຢູ່ເວລາເສົ້າ. ຄວາມສົນໃຈຫຼັກ:
+                    ການພັດທະນາຄວາມຄິດສ້າງສັນ, ອອກກຳລັງກາຍ.</p>
+                <ul>
+                    <li>🎓 ກຳລັງຮຽນ: [ສາຂາຄອມພິວເຕິ/ຄະນະວິທະຍາສາດ] ແລະ [ສາຂາພາສາອັງກິດສື່ສານທົ່ວໄປ/lao-top collage]</li>
+                    <li>🧰 ທັກສະ: HTML, CSS, JS, Excel Advanced</li>
+                    <li>🗣 ພາສາ: Hmong, Lao, Thai, English</li>
+                </ul>
+            </div>
+            <div class="panel reveal">
+                <h3 style="margin:0 0 8px">ໄຮໄລທ໌ & ສະຖິຕິ</h3>
+                <div class="stats">
+                    <div class="stat">
+                        <div style="font-size:28px; font-weight:800">0</div>
+                        <div class="hint">Projects</div>
+                    </div>
+                    <div class="stat">
+                        <div style="font-size:28px; font-weight:800">4</div>
+                        <div class="hint">ພາສາ</div>
+                    </div>
+                    <div class="stat">
+                        <div style="font-size:28px; font-weight:800">80%</div>
+                        <div class="hint">ຄວາມຕັ້ງໃຈ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <!-- CONTACT -->
+     <section id="contact">
+        <div class="container">
+            <h2 class="section-title">ຕິດຕໍ່</h2>
+            <p class="section-sub">ສາມາດຕິດຕໍ່ຂ້ອຍຜ່ານຊ່ອງທາງຕໍ່ໄປນີ້:</p>
+            <div class="contact-links">
+            <a class="btn primary" href="https://www.facebook.com/share/17PhDdMiTu/ " target="_blank">📘 Facebook</a>
+            <a class="btn" href="">✉ yeyang708@gmail.com</a>
+            <a class="btn" href="https://github.com/Yey-Yang" target="_blank">💬 Github</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container"
+            style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+            <div>© <span id="year"></span> <span id="footerName">YE YANG</span>. All rights reserved.</div>
+            <div class="hint">Built with HTML, CSS & JS • Dark Mode • Smooth Animations</div>
+        </div>
+    </footer>
+
+    <button id="toTop" class="btn to-top" aria-label="Back to top">↑</button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
