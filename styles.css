@@ -11,24 +11,6 @@
 --radius: 18px;
 --border: 1px solid rgba(255,255,255,.14);
 }
-/* .logo {
-  width: 48px;   /* ຂະໜາດບັອກ */
-  /* height: 48px;
-  border-radius: 12px;
-  background: conic-gradient(from 210deg, var(--brand), var(--brand-2), var(--accent));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-} */
-
-/* .logo img {
-  width: 70%;   /* ເຮັດໃຫ້ຮູບນ້ອຍກວ່າບັອກ */
-  /* height: 70%;
-  object-fit: cover;
-  border-radius: 8px;  ເຮັດໃຫ້ຮູບເຂົ້າຮູບ
-} */ 
-
 [data-theme="light"]{
 --bg: #f6f8ff;
 --bg-soft: #ffffff;
@@ -162,4 +144,54 @@ ease, transform .2s ease; }
   flex: 1 1 auto;
   justify-content: center;
   text-decoration: none;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between logo and text */
+  font-size: clamp(14px, 2vw, 18px); /* responsive font size */
+}
+
+.logo {
+  width: 2em;     /* responsive: based on font size */
+  height: 2em;
+  border-radius: 12px;
+  background: conic-gradient(from 210deg, var(--brand), var(--brand-2), var(--accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0; /* prevent shrinking on small screens */
+}
+
+.logo img {
+  width: 70%;  /* smaller than the block */
+  height: 70%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 768px) {
+  .brand {
+    font-size: clamp(12px, 4vw, 16px); /* smaller text on mobile */
+  }
+
+  .logo {
+    width: 1.8em;
+    height: 1.8em;
+  }
+}
+
+/* ✅ Very small phones */
+@media (max-width: 480px) {
+  .brand {
+    gap: 0.4rem;
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 1.6em;
+    height: 1.6em;
+  }
 }
